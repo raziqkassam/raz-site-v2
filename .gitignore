@@ -1,1 +1,9 @@
-node_modules
+# Ignore node_modules
+node_modules/
+
+# Ignore build output
+build/
+
+# Other files and directories to ignore
+.DS_Store
+.env

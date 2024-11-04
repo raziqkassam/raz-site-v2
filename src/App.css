@@ -424,7 +424,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .about-section .slideshow {
     width: 90% !important;
     margin: 20px 0 0 15px !important;
-
+  }
+  .about-section .slideshow img {
+    height: 222px !important;
   }
   .about-education-content p,
   .about-personal-content p{ 

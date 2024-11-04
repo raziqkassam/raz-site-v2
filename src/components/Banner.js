@@ -61,7 +61,7 @@ export const Banner = () => {
                   With experience across product development, software, and medical devices, I bring a unique ability to bridge the gap between <b>engineering and healthcare. </b>
                   </p>
                   <p>
-                  I am driven by a mission to create <b>impactful technologies</b> that improve lives, and I thrive in fast-paced and collaborative environments that push the boundaries of innovation.
+                  I am driven by a mission to <b>create impactful technologies</b> that improve lives, and I thrive in fast-paced and collaborative environments that push the boundaries of innovation.
                   </p>
                   {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
                   <span className="banner-button">
