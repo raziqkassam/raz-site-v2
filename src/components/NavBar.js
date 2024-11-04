@@ -35,7 +35,10 @@ export const NavBar = () => {
   }
 
   const scrollWithOffset = (el) => {
-    const yOffset = -80; // Adjust this value to match the height of your navbar
+    const desktopYOffset = -80; // Adjust this value to match the height of your navbar on desktop
+    const mobileYOffset = -230; // Adjust this value to match the height of your navbar on mobile
+    
+    const yOffset = window.innerWidth < 768 ? mobileYOffset : desktopYOffset; // Use mobile offset if screen width is less than 768px
     const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
     window.scrollTo({ top: y, behavior: 'smooth' });
   };
@@ -52,10 +55,14 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link as={HashLink} smooth to="#home" style={{fontWeight:'bold'}} className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')} scroll={el => scrollWithOffset(el)}>Home</Nav.Link>
-              <Nav.Link as={HashLink} smooth to="#about" style={{fontWeight:'bold'}} className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('about')} scroll={el => scrollWithOffset(el)}>About</Nav.Link>
-              <Nav.Link as={HashLink} smooth to="#projects" style={{fontWeight:'bold'}} className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')} scroll={el => scrollWithOffset(el)}>Experience</Nav.Link>
-              <Nav.Link as={HashLink} smooth to="#skills" style={{fontWeight:'bold'}} className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')} scroll={el => scrollWithOffset(el)}>Skills</Nav.Link>
+              <Nav.Link as={HashLink} smooth to="#home" style={{fontWeight:'bold'}} className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} 
+                    onClick={() => onUpdateActiveLink('home')} scroll={el => scrollWithOffset(el)}>Home</Nav.Link>
+              <Nav.Link as={HashLink} smooth to="#about" style={{fontWeight:'bold'}} className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} 
+                    onClick={() => onUpdateActiveLink('about')} scroll={el => scrollWithOffset(el)}>About</Nav.Link>
+              <Nav.Link as={HashLink} smooth to="#projects" style={{fontWeight:'bold'}} className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} 
+                    onClick={() => onUpdateActiveLink('projects')} scroll={el => scrollWithOffset(el)}>Experience</Nav.Link>
+              {/* <Nav.Link as={HashLink} smooth to="#skills" style={{fontWeight:'bold'}} className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} 
+                    onClick={() => onUpdateActiveLink('skills')} scroll={el => scrollWithOffset(el)}>Skills</Nav.Link> */}
             </Nav>
             <span className="navbar-text">
               <div className="social-icon" style={{ marginRight: '10px' }}>

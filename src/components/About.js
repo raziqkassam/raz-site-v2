@@ -3,7 +3,9 @@ import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css'; // Ensure this line is present to import the CSS file
-import test from '../assets/img/test.jpg';
+import cow from '../assets/img/test.jpg';
+import skydive from '../assets/img/skydive.jpg';
+
 
 const About = () => {
   const [showModal, setShowModal] = useState(false);
@@ -16,15 +18,9 @@ const About = () => {
 
   const handleClose = () => setShowModal(false);
 
-  const educationImages = [
-    test,
-    test,
-    // Add more images as needed
-  ];
-
   const personalImages = [
-    test,
-    test,
+    cow,
+    skydive,
     // Add more images as needed
   ];
 
@@ -36,9 +32,9 @@ const About = () => {
             <div className="about-personal-content">
             <div className="personal">
                 <h2>About Me</h2>
-                <p>I thrive at the intersection of technology and human-centered design, bridging diverse fields to create solutions that are both functional and transformative.</p>
+                <p>I thrive at the <b>intersection of technology and human-centered design</b>, bridging diverse fields to create solutions that are both functional and transformative.</p>
                 <p>I am chasing my dream to improve lives, whether through advancing medical technologies or designing experiences that spark communities.</p>
-                <p>I am fueled by my curiosity, and constant desire for greatness.</p>
+                <p>I am fueled by my curiosity, and constant desire to achieve greatness.</p>
                 <p>I also love music, watching movies, taking pictures, and traveling the world!</p>
                 {/* Add more personal interests as needed */}
               </div>

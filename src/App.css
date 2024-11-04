@@ -269,6 +269,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner-screen {
   margin-top: 0;
   padding-left: 300px;
+  padding-right: 20px;
   height: calc(100vh - 100px); /* Set height to full viewport height */
   display: flex;
   align-items: center; /* Center content vertically */
@@ -372,7 +373,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     padding: 80px 20px 50px 20px !important; /* Adjust padding for mobile */
   }
   .banner h1 {
-    font-size: 40px; /* Adjust font size for mobile */
+    font-size: 35px; /* Adjust font size for mobile */
+    margin-bottom: 30px;
   }
   .banner p {
     font-size: 14px; /* Adjust font size for mobile */
@@ -404,6 +406,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .project .proj-imgbx {
     margin-left: 25px !important;
     margin-right: 25px !important;
+    height: 250px !important;
+  }
+  .project .proj-imgbx img {
+    height: 250px !important;
   }
 
   .about-education-content,
@@ -584,7 +590,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
-  max-height: 300px;
+  height: 300px;
+}
+.proj-imgbx img {
+  height: 300px;
 }
 .proj-imgbx::before {
   content: "";
@@ -710,7 +719,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin-bottom: 18px !important; /* Add margin bottom */
     text-align: left !important; /* Align text to the left */
   }
-
+  .modal-main-content .external-links {
+    margin-bottom: 10px !important; /* Add margin bottom */
+    margin-top: 0 !important; /* Remove margin top */
+    /* padding: 0 !important; Remove padding */
+  }
+  .modal-main-content ul {
+    margin-bottom: 40px !important; /* Add margin bottom */
+  }
+  .navbar-nav .nav-link.navbar-link {
+    padding: 7px 0px 4px 20px !important; /* Adjust padding for mobile */
+    font-size: 20px !important; /* Adjust font size for mobile */
+  }
 }
 
 /* Add this to your CSS file */
@@ -815,7 +835,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
 }
 .contact form button span {
-  z-index: 1;
+  z-index: 0;
   position: relative;
 }
 .contact form button:hover {

@@ -5,10 +5,19 @@ import proj3 from "../assets/img/proj/proj3.jpeg";
 import proj4 from "../assets/img/proj/proj4.jpeg";
 import proj5 from "../assets/img/proj/proj5.jpeg";
 
+import molli from "../assets/img/molli-thumbnail.jpg";
+import ford from "../assets/img/ford-thumbnail.jpg";
+import xsensor from "../assets/img/xsensor-thumbnail.jpg";
+
+import romet from "../assets/img/romet-thumbnail.jpg";
 import gaitmate_demo from "../assets/img/gaitmate-demo.mp4";
 import gatimate from "../assets/img/gaitmate-thumbnail.jpg";
 import joymouse from "../assets/img/joymouse-thumbnail.png";
 import joymouse_pdf from "../assets/img/joymouse-summary.pdf";
+
+import biotec from "../assets/img/biotec-thumbnail.jpg";
+import ge from "../assets/img/ge-thumbnail.jpg";
+import artwork from "../assets/img/artwork/art-thumbnail.jpg";
 import paint1 from "../assets/img/artwork/img-paint1.jpg";
 import paint2 from "../assets/img/artwork/img-paint2.jpg";
 import paint3 from "../assets/img/artwork/img-paint3.jpg";
@@ -24,7 +33,7 @@ export const workData = [
         imgUrl: proj_sickkids,
         link: "",
         details: {
-            subtitle: "May 2023 - August 2023",
+            subtitle: "May 2023 - Aug 2023",
             bulletPoints: [
             "Constructed a neuroendovascular surgical simulation system to improve the surgical training processes.",
             "Designed and assembled a mechanical system using SolidWorks to replicate anatomical properties.",
@@ -40,10 +49,10 @@ export const workData = [
         id: 4,
         title: "Research and Development Engineer",
         company: "MOLLI Surgical",
-        imgUrl: proj3,
+        imgUrl: molli,
         link: "http://mollisurgical.com/molli2-wand-tablet/",
         details: {
-            subtitle: "May 2022 - August 2022",
+            subtitle: "May 2022 - Aug 2022",
             bulletPoints: [
             "Built a pipeline that aggregates data and connects firmware to a dashboard using Python for a surgical tool.",
             "Designed tools and Python scripts to assess a surgical localization device's accuracy from 3M+ data points.",
@@ -59,7 +68,7 @@ export const workData = [
         id: 3,
         title: "Product Development Engineer",
         company: "Ford Motor Company",
-        imgUrl: proj5,
+        imgUrl: ford,
         details: {
             subtitle: "Sept 2021 - Dec 2021",
             bulletPoints: [
@@ -77,13 +86,14 @@ export const workData = [
         id: 2,
         title: "Machine Learning Engineer",
         company: "XSENSOR Technology Corporation",
-        imgUrl: proj2,
+        imgUrl: xsensor,
         details: {
-            subtitle: "Jan 2021 - Apr 2021",
+            subtitle: "Jan - Apr 2021",
             bulletPoints: [
             "Utilized signals and filtering to make a real-time contactless heart rate detection system with 94% accuracy.",
             "Oversaw data collection, cleaning, and testing that improved the prediction of patient's pressure injury risk.",
-            ],
+            "Managed data cleaning outsourcing, including vendor selection, negotiation, training resource development, and setting up virtual workspaces via AWS for efficient process scaling."
+        ],
             buttons: [
             { url: "https://www.xsensor.com/solutions-and-platform/csm/patient-bed-monitoring", label: "Product Site" },
             ],
@@ -118,7 +128,7 @@ export const workData = [
         id: 3,
         title: "ROMET",
         company: "Range-of-Motion Exercise Tracker for Physiotherapists and Patients",
-        imgUrl: proj2,
+        imgUrl: romet,
         details: {
             subtitle: "Range-of-Motion Exercise Tracker for Physiotherapists and Patients",
             bulletPoints: [
@@ -192,7 +202,7 @@ export const workData = [
         id: 3,
         title: "Web Platform Lead",
         company: "Biotechnology and Bioengineering Conference",
-        imgUrl: proj3,
+        imgUrl: biotec,
         details: {
             subtitle: "BioTEC Conference",
             bulletPoints: [
@@ -209,7 +219,7 @@ export const workData = [
         id: 1,
         title: "Global Encounters",
         company: "Hyderabad, India",
-        imgUrl: proj3,
+        imgUrl: ge,
         details: {
             subtitle: "Service Learning Trip",
             bulletPoints: [
@@ -226,7 +236,7 @@ export const workData = [
         id: 0,
         title: "Various Art Projects",
         company: "",
-        imgUrl: proj3,
+        imgUrl: artwork,
         details: {
             subtitle: "Paintings, Sketches, SolidWorks Designs",
             bulletPoints: [
