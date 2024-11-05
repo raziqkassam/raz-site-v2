@@ -1,28 +1,43 @@
+// WORK
+import sickkids_tn from "../assets/img/thumbnails/tn/sickkids-tn.png";
+import sickkids_demo from "../assets/img/sickkids-demo.mp4";
+import molli_tn from "../assets/img/thumbnails/tn/molli-tn.png";
+import ford_tn from "../assets/img/thumbnails/tn/ford-tn.png";
+import xsensor_tn from "../assets/img/thumbnails/tn/xsensor-tn.png";
+import bci_tn from "../assets/img/thumbnails/tn/bci-tn.png";
 
-import proj_sickkids from "../assets/img/proj/proj1.jpeg";
-import proj2 from "../assets/img/proj/proj2.jpeg";
-import proj3 from "../assets/img/proj/proj3.jpeg";
-import proj4 from "../assets/img/proj/proj4.jpeg";
-import proj5 from "../assets/img/proj/proj5.jpeg";
-
-import molli from "../assets/img/molli-thumbnail.jpg";
-import ford from "../assets/img/ford-thumbnail.jpg";
-import xsensor from "../assets/img/xsensor-thumbnail.jpg";
-
-import romet from "../assets/img/romet-thumbnail.jpg";
+// PROJECTS
+import romet_tn from "../assets/img/thumbnails/tn/romet-tn.png";
+import gaitmate_tn from "../assets/img/thumbnails/tn/gaitmate-tn.png";
 import gaitmate_demo from "../assets/img/gaitmate-demo.mp4";
-import gatimate from "../assets/img/gaitmate-thumbnail.jpg";
-import joymouse from "../assets/img/joymouse-thumbnail.png";
+import joymouse_tn from "../assets/img/thumbnails/tn/joymouse-tn.png";
 import joymouse_pdf from "../assets/img/joymouse-summary.pdf";
 
-import biotec from "../assets/img/biotec-thumbnail.jpg";
-import ge from "../assets/img/ge-thumbnail.jpg";
-import artwork from "../assets/img/artwork/art-thumbnail.jpg";
-import paint1 from "../assets/img/artwork/img-paint1.jpg";
-import paint2 from "../assets/img/artwork/img-paint2.jpg";
-import paint3 from "../assets/img/artwork/img-paint3.jpg";
-import threeD1 from "../assets/img/artwork/img-3d1.jpg";
-import threeD2 from "../assets/img/artwork/img-3d2.jpg";
+// LEADERSHIP
+import squash_tn from "../assets/img/thumbnails/tn/squash-tn.png";
+import biotec_tn from "../assets/img/thumbnails/tn/biotec-tn.png";
+import ge_tn from "../assets/img/thumbnails/tn/ge-tn.png";
+
+// Function to import all images from a folder
+function importAll(r) {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+}
+// Import all images in each folder for the full project details
+// const personal = importAll(require.context("../assets/img/proj/thumbnails/personal", false, /\.(png|jpeg|svg)$/));
+// const scenes = importAll(require.context("../assets/img/proj/", false, /\.(png|jpeg|svg)$/));
+const sickkids = importAll(require.context("../assets/img/thumbnails/sickkids", false, /\.(png|jpe?g||jpg|svg)$/));
+const molli = importAll(require.context("../assets/img/thumbnails/molli", false, /\.(png|jpe?g|jpg|svg)$/));
+const ford = importAll(require.context("../assets/img/thumbnails/ford", false, /\.(png|jpe?g|jpg|svg)$/));
+const xsensor = importAll(require.context("../assets/img/thumbnails/xsensor", false, /\.(png|jpe?g|jpg|svg)$/));
+const bci = importAll(require.context("../assets/img/thumbnails/bci", false, /\.(png|jpe?g|jpg|svg)$/));
+const romet = importAll(require.context("../assets/img/thumbnails/romet", false, /\.(png|jpe?g|jpg|svg)$/));
+const gaitmate = importAll(require.context("../assets/img/thumbnails/gaitmate", false, /\.(png|jpe?g|jpg|svg)$/));
+const joymouse = importAll(require.context("../assets/img/thumbnails/joymouse", false, /\.(png|jpe?g|jpg|svg)$/));
+const squash = importAll(require.context("../assets/img/thumbnails/squash", false, /\.(png|jpe?g|jpg|svg)$/));
+const biotec = importAll(require.context("../assets/img/thumbnails/biotec", false, /\.(png|jpe?g|jpg|svg|gif)$/));
+const ge = importAll(require.context("../assets/img/thumbnails/ge", false, /\.(png|jpe?g|jpg|svg)$/));
 
 
 export const workData = [
@@ -30,29 +45,30 @@ export const workData = [
         id: 5,
         title: "Biomedical Systems Developer",
         company: "SickKids Hospital",
-        imgUrl: proj_sickkids,
+        imgUrl: sickkids_tn,
         link: "",
         details: {
-            subtitle: "May 2023 - Aug 2023",
+            subtitle: "Toronto, Canada",
             bulletPoints: [
             "Constructed a neuroendovascular surgical simulation system to improve the surgical training processes.",
             "Designed and assembled a mechanical system using SolidWorks to replicate anatomical properties.",
             "Developed a pipeline to 3D print patient-specific anatomy from imaging data using Mimics and 3-Matic."
             ],
             buttons: [
+            { url: sickkids_demo, label: "Demo Video" },
             { url: "https://www.sickkids.ca/en/care-services/centres/centre-for-brain-mental-health/paediatric-neurovascular-program/", label: "Department Site" },
             ],
-            images: [proj_sickkids, proj_sickkids, proj_sickkids, proj_sickkids, proj_sickkids, proj_sickkids]
+            images:  Object.values(sickkids)
         }
     },
     {
         id: 4,
         title: "Research and Development Engineer",
         company: "MOLLI Surgical",
-        imgUrl: molli,
+        imgUrl: molli_tn,
         link: "http://mollisurgical.com/molli2-wand-tablet/",
         details: {
-            subtitle: "May 2022 - Aug 2022",
+            subtitle: "Toronto, Canada",
             bulletPoints: [
             "Built a pipeline that aggregates data and connects firmware to a dashboard using Python for a surgical tool.",
             "Designed tools and Python scripts to assess a surgical localization device's accuracy from 3M+ data points.",
@@ -61,16 +77,16 @@ export const workData = [
             buttons: [
             { url: "http://mollisurgical.com/molli2-wand-tablet/", label: "Product Site" },
             ],
-            images: [proj_sickkids, proj2]
+            images:  Object.values(molli)
         }
     },
     {
         id: 3,
         title: "Product Development Engineer",
         company: "Ford Motor Company",
-        imgUrl: ford,
+        imgUrl: ford_tn,
         details: {
-            subtitle: "Sept 2021 - Dec 2021",
+            subtitle: "Waterloo, Canada",
             bulletPoints: [
             "Collaborated with senior developers, oversaw testing, and solved multiple user interface tickets using React.",
             "Deployed React based features that are implemented in the infotainment system of Ford electric vehicles.",
@@ -79,16 +95,16 @@ export const workData = [
             buttons: [
                 { url: "https://www.ford.com/technology/sync/#:~:text=Alexa%20Built%2Din-,SYNC%C2%AE%204%20Technology,-Available%20SYNC%204", label: "Product Site" },
             ],
-            images: [proj4, proj_sickkids]
+            images:  Object.values(ford)
         }
     },
     {
         id: 2,
         title: "Machine Learning Engineer",
         company: "XSENSOR Technology Corporation",
-        imgUrl: xsensor,
+        imgUrl: xsensor_tn,
         details: {
-            subtitle: "Jan - Apr 2021",
+            subtitle: "Calgary, Canada",
             bulletPoints: [
             "Utilized signals and filtering to make a real-time contactless heart rate detection system with 94% accuracy.",
             "Oversaw data collection, cleaning, and testing that improved the prediction of patient's pressure injury risk.",
@@ -97,16 +113,16 @@ export const workData = [
             buttons: [
             { url: "https://www.xsensor.com/solutions-and-platform/csm/patient-bed-monitoring", label: "Product Site" },
             ],
-            images: [proj_sickkids, proj_sickkids]
+            images:  Object.values(xsensor)
         }
     },
     {
         id: 1,
         title: "Brain-Computer Interface Engineer",
         company: "Alberta Children's Hospital",
-        imgUrl: proj4,
+        imgUrl: bci_tn,
         details: {
-            subtitle: "May 2020 - Aug 2020",
+            subtitle: "Calgary, Canada",
             bulletPoints: [
             "Developed a prototype that assists kids with neurological disabilities to paint without physical control.",
             "Employed Python for real-time EEG data analysis and Node.js for robot control based on extracted features.",
@@ -114,10 +130,10 @@ export const workData = [
             ],
             buttons: [
                 { url: "https://cumming.ucalgary.ca/research/pediatric-bci/bci-program/bci-program", label: "Program Link" },
-                { url: "https://github.com/raziqkassam/sphero", label: "GitHub" },
                 { url: "https://www.youtube.com/watch?v=D6xbxsmxb2w", label: "Presentation Video" },
+                { url: "https://github.com/raziqkassam/sphero", label: "GitHub" },
             ],
-            images: [proj_sickkids, proj_sickkids]
+            images:  Object.values(bci)
         }
     },
     // Add more projects as needed
@@ -128,7 +144,7 @@ export const workData = [
         id: 3,
         title: "ROMET",
         company: "Range-of-Motion Exercise Tracker for Physiotherapists and Patients",
-        imgUrl: romet,
+        imgUrl: romet_tn,
         details: {
             subtitle: "Range-of-Motion Exercise Tracker for Physiotherapists and Patients",
             bulletPoints: [
@@ -140,14 +156,14 @@ export const workData = [
             { url: "https://romet.app", label: "Active Web App" },
             { url: "https://www.youtube.com/watch?v=pClD94RXg68", label: "Demo Video" }
             ],
-            images: [proj2, proj2]
+            images:  Object.values(romet)
         }
     },
     {
         id: 2,
         title: "GaitMate",
         company: "Plantar Pressure Sensor with Real-Time Haptic Feedback",
-        imgUrl: gatimate,
+        imgUrl: gaitmate_tn,
         details: {
             subtitle: "Plantar Pressure Sensor with Real-Time Haptic Feedback",
             bulletPoints: [
@@ -157,14 +173,14 @@ export const workData = [
             buttons: [
             { url: gaitmate_demo, label: "Demo Video" },
             ],
-            images: [proj2, proj2]
+            images:  Object.values(gaitmate)
         }
     },
     {
         id: 1,
         title: "JoyMouse",
         company: "Joystick Controlled Cursor for Individuals with Hand Tremors",
-        imgUrl: joymouse,
+        imgUrl: joymouse_tn,
         details: {
             subtitle: "Joystick Controlled Cursor for Individuals with Hand Tremors",
             bulletPoints: [
@@ -174,7 +190,7 @@ export const workData = [
             buttons: [
             { url: joymouse_pdf, label: "Summary PDF" }
             ],
-            images: [proj2, proj2]
+            images:  Object.values(joymouse)
         }
     },
     // Add more projects as needed
@@ -185,7 +201,7 @@ export const workData = [
         id: 4,
         title: "Men's Varsity Squash Team",
         company: "University of Waterloo",
-        imgUrl: proj3,
+        imgUrl: squash_tn,
         details: {
             subtitle: "2019-2024 - Player and Co-Captain",
             bulletPoints: [
@@ -195,14 +211,14 @@ export const workData = [
             ],
             buttons: [
             ],
-            images: [proj3, proj5]
+            images:  Object.values(squash)
         }
     },
     {
         id: 3,
         title: "Web Platform Lead",
         company: "Biotechnology and Bioengineering Conference",
-        imgUrl: biotec,
+        imgUrl: biotec_tn,
         details: {
             subtitle: "BioTEC Conference",
             bulletPoints: [
@@ -212,14 +228,14 @@ export const workData = [
             ],
             buttons: [
             ],
-            images: [proj3, proj5]
+            images:  Object.values(biotec)
         }
     },
     {
         id: 1,
         title: "Global Encounters",
         company: "Hyderabad, India",
-        imgUrl: ge,
+        imgUrl: ge_tn,
         details: {
             subtitle: "Service Learning Trip",
             bulletPoints: [
@@ -229,21 +245,7 @@ export const workData = [
             ],
             buttons: [
             ],
-            images: [proj3, proj5]
-        }
-    },
-    {
-        id: 0,
-        title: "Various Art Projects",
-        company: "",
-        imgUrl: artwork,
-        details: {
-            subtitle: "Paintings, Sketches, SolidWorks Designs",
-            bulletPoints: [
-            ],
-            buttons: [
-            ],
-            images: [paint1, paint2, paint3, threeD1, threeD2]
+            images:  Object.values(ge)
         }
     },
     // Add more projects as needed

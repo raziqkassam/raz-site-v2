@@ -4,7 +4,6 @@ import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css'; // Ensure this line is present to import the CSS file
 import cow from '../assets/img/test.jpg';
-import skydive from '../assets/img/skydive.jpg';
 
 
 const About = () => {
@@ -17,12 +16,16 @@ const About = () => {
   };
 
   const handleClose = () => setShowModal(false);
+  // Function to import all images from a folder
+  function importAll(r) {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+  }
+  // Import all images from the img/proj folder
+  const personal = importAll(require.context("../assets/img/thumbnails/personal", false, /\.(png|jpeg|svg)$/));
 
-  const personalImages = [
-    cow,
-    skydive,
-    // Add more images as needed
-  ];
+  const personalImages = Object.values(personal)
 
   return (
     <section className="about-section" id="about">

@@ -426,7 +426,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin: 20px 0 0 15px !important;
   }
   .about-section .slideshow img {
-    height: 222px !important;
+    height: 270px !important;
   }
   .about-education-content p,
   .about-personal-content p{ 
@@ -436,14 +436,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ About Css ************/
 .about-section {
-  padding: 30px 50px 50px 0px;
+  padding: 30px 80px 50px 0px;
   background-color: var(--ice);
-  margin-left: -130px;
+  margin-left: -200px;
   
 }
 .about-section .slideshow {
   width: 130%;
 }
+.slideshow img {
+  width: 100%; /* Ensure the image takes the full width of the container */
+  height: 350px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+}
+
 .education h2, .personal h2 {
   color: var(--blue);
   font-size: 20px;
@@ -460,6 +466,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .education p, .personal p {
   color: var(--brown);
   margin-top: -5px;
+  padding-right: 20px;
 }
 
 .about-content {
@@ -496,6 +503,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .custom-modal-body {
   padding: 20px; /* Add padding */
   border-bottom: none;
+}
+.custom-modal-body img {
+  width: 100%; /* Ensure the image takes the full width of the container */
+  height: 600px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
 }
 .custom-modal-footer {
   border: none; /* Remove border top */
@@ -704,8 +716,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     overflow-y: auto !important; /* Enable scrolling if content overflows */
   }
   .image-gallery img {
-    height: 180px !important; 
+    height: 200px !important; 
     width: auto !important;
+  }
+  .custom-modal-body img {
+    width: 100% !important; /* Ensure the image takes the full width of the container */
+    height: 420px !important; /* Set a fixed height for the images */
+    object-fit: cover !important; /* Ensure the image covers the container without distortion */
+  }
+  .custom-modal-footer button {
+    display: none !important; /* Hide the button */
   }
   .modal-main-content button {
     padding: 0 !important;

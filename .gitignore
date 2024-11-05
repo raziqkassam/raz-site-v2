@@ -7,3 +7,25 @@ build/
 # Other files and directories to ignore
 .DS_Store
 .env
+build/asset-manifest.json
+build/index.html
+build/static/media/art-thumbnail.5ce0b4ccbac1eed5f296.jpg
+build/static/media/biotec-thumbnail.ebb800ec54ca0bc24aa1.jpg
+build/static/media/ford-thumbnail.8c5ecc06f8b83effa21e.jpg
+build/static/media/gaitmate-thumbnail.5c7112e977cbb1dfd20f.jpg
+build/static/media/ge-thumbnail.7223ffdcee3ff47b7141.jpg
+build/static/media/img-3d1.ca014598e741d681d196.jpg
+build/static/media/img-3d2.f4e576be3688f8e0281b.jpg
+build/static/media/img-paint1.ac20e441d02ea1c6f4d0.jpg
+build/static/media/img-paint2.8ae877bd4e1e9d30bf7c.jpg
+build/static/media/img-paint3.5ce0b4ccbac1eed5f296.jpg
+build/static/media/joymouse-thumbnail.aac943a7f31115e1fbfb.png
+build/static/media/molli-thumbnail.922f1b7785ba126fd1a8.jpg
+build/static/media/proj1.cbf5818dbfb3d0761d1d.jpeg
+build/static/media/proj2.11407077eb9ae4bbaf34.jpeg
+build/static/media/proj3.990fe322b65d7f928f24.jpeg
+build/static/media/proj4.b2643412550901effc88.jpeg
+build/static/media/proj5.8b02804eecec8d51e3c4.jpeg
+build/static/media/romet-thumbnail.2834a95956d7b47755ea.jpg
+build/static/media/skydive.768926055287eaa849e9.jpg
+build/static/media/xsensor-thumbnail.518a5297e33f722f0cba.jpg

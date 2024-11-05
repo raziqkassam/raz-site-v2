@@ -35,7 +35,7 @@ export const NavBar = () => {
   }
 
   const scrollWithOffset = (el) => {
-    const desktopYOffset = -80; // Adjust this value to match the height of your navbar on desktop
+    const desktopYOffset = -100; // Adjust this value to match the height of your navbar on desktop
     const mobileYOffset = -230; // Adjust this value to match the height of your navbar on mobile
     
     const yOffset = window.innerWidth < 768 ? mobileYOffset : desktopYOffset; // Use mobile offset if screen width is less than 768px
