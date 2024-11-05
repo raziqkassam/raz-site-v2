@@ -50,9 +50,9 @@ export const workData = [
         details: {
             subtitle: "Toronto, Canada",
             bulletPoints: [
-            "Constructed a neuroendovascular surgical simulation system to improve the surgical training processes.",
-            "Designed and assembled a mechanical system using SolidWorks to replicate anatomical properties.",
-            "Developed a pipeline to 3D print patient-specific anatomy from imaging data using Mimics and 3-Matic."
+            "Designed and assembled an electro-mechanical system that uses pediatric-specific neurovascular 3D-models with realistic anatomy and flow characteristics for hands-on endovascular simulation.",            
+            "This simulation system is vital for high-precision practice, allowing medical professionals to gain realistic and hands-on experience before performing complex procedures.",
+            "Leveraged SolidWorks for part design, and built a 3D printing pipeline using Mimics and 3-Matic to recreate patient-specific anatomy from imaging data.",
             ],
             buttons: [
             { url: sickkids_demo, label: "Demo Video" },
@@ -70,9 +70,9 @@ export const workData = [
         details: {
             subtitle: "Toronto, Canada",
             bulletPoints: [
-            "Built a pipeline that aggregates data and connects firmware to a dashboard using Python for a surgical tool.",
-            "Designed tools and Python scripts to assess a surgical localization device's accuracy from 3M+ data points.",
-            "Established a proof-of-concept wireless data transfer system through real-time Bluetooth communication."
+                "Led the validation and testing initiatives for MOLLI 2, a breakthrough surgical localization device that revolutionizes minimally invasive tumor surgeries by providing sub-millimeter 3D guidance.",
+                "Developed and implemented a comprehensive Python-based testing framework that analyzed  3M+ data points to validate the 3-dimensional accuracy of the surgical device.",
+                "Built a pipeline that aggregates data and connects firmware to a dashboard using Python for a surgical tool. Established a proof-of-concept wireless data transfer system through real-time Bluetooth communication.",
             ],
             buttons: [
             { url: "http://mollisurgical.com/molli2-wand-tablet/", label: "Product Site" },
@@ -124,10 +124,10 @@ export const workData = [
         details: {
             subtitle: "Calgary, Canada",
             bulletPoints: [
-            "Developed a prototype that assists kids with neurological disabilities to paint without physical control.",
-            "Employed Python for real-time EEG data analysis and Node.js for robot control based on extracted features.",
-            "Presented the project outcome at 2 symposiums and received an award for the best 3-minute presentation."
-            ],
+            "Created a brain-computer interface project that enables children to paint without physical control by utilizing SSVEP-based systems, fostering cognitive development and creating an outlet of play. ",
+            "Utilized Python for EEG data processing and Node.js for controlling the robot by translating brain signals into robot actions which they then drive through paint drops on a canvas to create beautiful abstract designs. ",
+            "Demonstrated the capability of controlling programmable games with BCI for entertainment, creating a compact, transportable, affordable option. The ideation and prototype was later verified on children with cerebral palsy, where several kids won awards within the community for the paintings they created.",
+        ],
             buttons: [
                 { url: "https://cumming.ucalgary.ca/research/pediatric-bci/bci-program/bci-program", label: "Program Link" },
                 { url: "https://www.youtube.com/watch?v=D6xbxsmxb2w", label: "Presentation Video" },
@@ -148,9 +148,9 @@ export const workData = [
         details: {
             subtitle: "Range-of-Motion Exercise Tracker for Physiotherapists and Patients",
             bulletPoints: [
-            "Developed a web app with React for physiotherapists to prescribe at home exercises and track progress.",
-            "Built an iOS app that leverages computer vision to measure range-of-motion angles with ± 4˚ accuracy.",
-            "Connected web and mobile apps using RESTful APIs built with Python and a MongoDB database."
+                "Designed and built a web app in React for physiotherapists to prescribe at-home exercises and monitor patient rehab progress, paired with an iOS app that uses computer vision for accurate range-of-motion exercise measurements.",
+                "By combining app interfaces and data analytics, the goal is to improve patient adherence, optimize recovery outcomes, and contribute to more efficient healthcare resource allocation.",
+                "Resulted in a functional system that achieved ±4˚ of accuracy in range-of-motion measurements and improved rehabilitation tracking for both qualitative and quantitive metrics, elevating the standard of injury recovery.",
             ],
             buttons: [
             { url: "https://romet.app", label: "Active Web App" },
