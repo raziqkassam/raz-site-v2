@@ -10,8 +10,8 @@ export const Footer = () => {
             {/* <img src={logo} alt="Logo" style={{ width: '100px', height: '100px' }} /> */}
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
-            <p>Raziq Kassam, 2024</p>
-            <p>RAZILIENCE</p>
+            <p>Developed by: Raziq Kassam, 2024</p>
+            <p><b>RAZILIENCE</b></p>
           </Col>
         </Row>
       </Container>

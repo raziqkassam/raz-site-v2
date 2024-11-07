@@ -45,9 +45,9 @@ const About = () => {
             <div className="about-education-content">
               <div className="education">
                 <h2>University of Waterloo</h2>
-                <p>I graduated with a BASc in Honours <b>Biomedical Engineering</b>, with Distinction.</p>
-                <p>I competed on the Men's Varsity Squash Team, and got involved as a Co-captain, Team Leader, and Athletics Mentor.</p>
-                <p>I spent one semester abroad at Tampere University in Finland, focused on Medicine and Health Technology systems.</p>
+                <p>I graduated with a BASc in Honours <b>Biomedical Engineering</b> with Distinction.</p>
+                <p>I played on the Men’s Varsity Squash Team as Co-captain, Team Leader, and Athletics Mentor, supporting my teammates and building team culture.</p>
+                <p>I also spent one semester abroad at Tampere University in Finland!</p>
                 {/* Add more education details as needed */}
               </div>
             </div>

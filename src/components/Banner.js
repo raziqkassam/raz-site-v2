@@ -3,6 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
+import hb from '../assets/img/h2.jpg';
+
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -53,8 +55,8 @@ export const Banner = () => {
             <TrackVisibility partialVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline"></span>
-                <h1>{`Raziq Kassam`} 
+                {/* <span className="tagline"></span> */}
+                <h1 >{`Raziq Kassam`} 
                     {/* <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span> */}
                 </h1>
                   <p>
@@ -73,11 +75,9 @@ export const Banner = () => {
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                </div>}
-            </TrackVisibility>
+                <div className={"animate__animated animate__zoomIn" }>
+                  <img src={hb} alt="Hummingbird" className="banner-image" />
+                </div>
           </Col>
         </Row>
       </Container>
