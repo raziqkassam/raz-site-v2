@@ -786,41 +786,84 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 50px 0 50px 0;
   position: relative;
+  background: var(--ice);
 }
 .skill-bx {
-  background: #151515;
+  background: transparent;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 20px 0px;
 }
 .skill h2 {
 	font-size: 30px;
 	font-weight: 900;
+  color: var(--blue);
+  text-transform: uppercase;
 }
 .skill p {
-    color: #B8B8B8;
+    color: var(--brown);
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 14px 0 75px 0;
 }
+.skill .item h5 {
+  color: var(--brown);
+  font-weight: 500;
+  font-size: 15px;
+}
+.skill .item {
+  padding: 0 0px;
+}
 .skill-slider {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   position: relative;
+  padding-top: 25px;
 }
 .skill-slider .item img {
   width: 50%;
   margin: 0 auto 15px auto;
 }
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
+
+.skill .react-multiple-carousel__arrow--left {
+  left: 0px; /* Adjust this value to move the left arrow further left */
+  background-color: var(--accent);
+  opacity: 0.3;
 }
 
+.skill .react-multiple-carousel__arrow--right {
+  right: 0px; /* Adjust this value to move the right arrow further right */
+  background-color: var(--accent);
+  opacity: 0.3;
+}
+.react-multi-carousel-track {
+  margin: -10px; /* Remove margin from the carousel track */
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .skill {
+    padding: 20px 20px;
+  }
+  .skill h2 {
+    font-size: 25px; /* Adjust font size for mobile */
+  }
+  .skill .item h5 {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+  .skill p {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+  .skill-slider {
+    width: 100%;
+    padding-top: 5px;
+  }
+  .skill-slider .item img {
+    width: 40%; /* Adjust image width for mobile */
+  }
+}
 
 /************ Projects Css ************/
 .contact {
