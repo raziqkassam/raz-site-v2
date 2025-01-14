@@ -60,7 +60,7 @@ export const Banner = () => {
                     {/* <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span> */}
                 </h1>
                   <p>
-                  With experience across product development, software, and medical devices, I bring a unique ability to bridge the gap between <b>engineering and healthcare. </b>
+                  With experience across product design, software, and medical devices, I bring a unique ability to bridge the gap between <b>engineering and user-centered design.</b>
                   </p>
                   <p>
                   I am driven by a mission to <b>create impactful technologies</b> that improve lives, and I thrive in fast-paced and collaborative environments that push the boundaries of innovation.
@@ -75,9 +75,9 @@ export const Banner = () => {
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
-                <div className={"animate__animated animate__zoomIn" }>
+                {/* <div className={"animate__animated animate__zoomIn" }>
                   <img src={hb} alt="Hummingbird" className="banner-image" />
-                </div>
+                </div> */}
           </Col>
         </Row>
       </Container>

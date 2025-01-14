@@ -43,7 +43,7 @@ const ge = importAll(require.context("../assets/img/thumbnails/ge", false, /\.(p
 export const workData = [
     {
         id: 5,
-        title: "Biomedical Systems Developer",
+        title: "Robotic Systems Designer",
         company: "SickKids Hospital",
         imgUrl: sickkids_tn,
         link: "",
@@ -142,11 +142,11 @@ export const workData = [
   export const projectData = [
     {
         id: 3,
-        title: "ROMET",
-        company: "Range-of-Motion Exercise Tracker for Physiotherapists and Patients",
+        title: "Product Designer, Frontend Developer",
+        company: "ROMET: Range of Motion Exercise Tracker",
         imgUrl: romet_tn,
         details: {
-            subtitle: "Range-of-Motion Exercise Tracker for Physiotherapists and Patients",
+            subtitle: "ROMET",
             bulletPoints: [
                 "Designed and built a web app in React for physiotherapists to prescribe at-home exercises and monitor patient rehab progress, paired with an iOS app that uses computer vision for accurate range-of-motion exercise measurements.",
                 "By combining app interfaces and data analytics, the goal is to improve patient adherence, optimize recovery outcomes, and contribute to more efficient healthcare resource allocation.",

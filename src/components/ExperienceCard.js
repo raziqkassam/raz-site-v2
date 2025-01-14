@@ -115,7 +115,7 @@ export const ProjectCard = ({ title, company, imgUrl, details, id}) => {
           >{details.subtitle}</h3>
         <ul>
           {details.bulletPoints.map((point, index) => (
-            <li key={index} style={{ marginBottom: '10px', color:'var(--brown)' }}>{point}</li>
+            <li key={index} style={{ fontSize: '18px', lineHeight:'1.3', marginBottom: '12px', color:'var(--brown)' }}>{point}</li>
           ))}
         </ul>
         <div>
