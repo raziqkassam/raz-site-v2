@@ -1,4 +1,5 @@
 // WORK
+import practic_tn from "../assets/img/thumbnails/tn/practic-tn.png";
 import sickkids_tn from "../assets/img/thumbnails/tn/sickkids-tn.png";
 import sickkids_demo from "../assets/img/sickkids-demo.mp4";
 import molli_tn from "../assets/img/thumbnails/tn/molli-tn.png";
@@ -27,6 +28,7 @@ function importAll(r) {
 // Import all images in each folder for the full project details
 // const personal = importAll(require.context("../assets/img/proj/thumbnails/personal", false, /\.(png|jpeg|svg)$/));
 // const scenes = importAll(require.context("../assets/img/proj/", false, /\.(png|jpeg|svg)$/));
+const practic = importAll(require.context("../assets/img/thumbnails/practic", false, /\.(png|jpe?g||jpg|svg)$/));
 const sickkids = importAll(require.context("../assets/img/thumbnails/sickkids", false, /\.(png|jpe?g||jpg|svg)$/));
 const molli = importAll(require.context("../assets/img/thumbnails/molli", false, /\.(png|jpe?g|jpg|svg)$/));
 const ford = importAll(require.context("../assets/img/thumbnails/ford", false, /\.(png|jpe?g|jpg|svg)$/));
@@ -41,6 +43,26 @@ const ge = importAll(require.context("../assets/img/thumbnails/ge", false, /\.(p
 
 
 export const workData = [
+    {
+        id: 5,
+        title: "Systems Integration Designer",
+        company: "PRACTIC Consulting Inc.",
+        imgUrl: practic_tn,
+        link: "",
+        details: {
+            subtitle: "Canada",
+            bulletPoints: [
+            "Design integrated technology systems that power smarter, more connected healthcare environments.",            
+            "Lead project coordination for hospital technology integration, aligning teams, vendors, and engineers for multiple hospitals across Canada.",
+            "Empower various healthcare systems to achieve impactful digital transformation through scalable, results-driven solutions.",
+            ],
+            buttons: [
+            { url: "https://practicconsulting.ca", label: "Company Site" },
+            { url: "https://www.linkedin.com/company/practic-consulting-canada/", label: "LinkedIn" },
+            ],
+            images:  Object.values(practic)
+        }
+    },
     {
         id: 5,
         title: "Robotic Systems Designer",

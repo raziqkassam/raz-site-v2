@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.98448d18.css",
-    "main.js": "/static/js/main.545178c3.js",
+    "main.js": "/static/js/main.1b83b58c.js",
     "static/js/453.298f5782.chunk.js": "/static/js/453.298f5782.chunk.js",
     "static/media/biotec2.gif": "/static/media/biotec2.a811f649258998e888b8.gif",
     "static/media/gaitmate-demo.mp4": "/static/media/gaitmate-demo.4ebe9f837b34cbbfb362.mp4",
@@ -20,6 +20,7 @@
     "static/media/ford-tn.png": "/static/media/ford-tn.9bf764409ebdae43be90.png",
     "static/media/biotec-tn.png": "/static/media/biotec-tn.fe8c51e818c17c04989b.png",
     "static/media/bci-tn.png": "/static/media/bci-tn.411fa1f666c238efeb40.png",
+    "static/media/practic-tn.png": "/static/media/practic-tn.398d8ee6bd7fb79a682f.png",
     "static/media/gaitmate-tn.png": "/static/media/gaitmate-tn.93a836de1a3013b2cdba.png",
     "static/media/squash5.jpeg": "/static/media/squash5.754d4a3dcb2a4efaff67.jpeg",
     "static/media/xsensor-tn.png": "/static/media/xsensor-tn.800bcf5a609dd46c330c.png",
@@ -29,6 +30,7 @@
     "static/media/sick5.jpeg": "/static/media/sick5.9a1396a9389eb27d3472.jpeg",
     "static/media/me4.jpeg": "/static/media/me4.42347da173cf9a911b47.jpeg",
     "static/media/me82.jpeg": "/static/media/me82.1933e16138070683d7dc.jpeg",
+    "static/media/practic3.jpeg": "/static/media/practic3.8bb6f18b0d1b1e2075f9.jpeg",
     "static/media/sick10.jpeg": "/static/media/sick10.9daf1e153741d1fae74f.jpeg",
     "static/media/sick0.jpeg": "/static/media/sick0.b5deb83ed759d0fafbc3.jpeg",
     "static/media/sick2.jpg": "/static/media/sick2.0e5f67bf6fa35575a4f2.jpg",
@@ -62,6 +64,7 @@
     "static/media/h2.jpg": "/static/media/h2.807c2a6b429dd4f20ab4.jpg",
     "static/media/romet3.png": "/static/media/romet3.bd48a25232afb209686b.png",
     "static/media/squash91.jpeg": "/static/media/squash91.4e4e1c28c753afd1a6d8.jpeg",
+    "static/media/practic2.png": "/static/media/practic2.6bb505a8c6dd2326625f.png",
     "static/media/squash3.jpeg": "/static/media/squash3.6ac60a2dba2c95c91ab6.jpeg",
     "static/media/ge3.png": "/static/media/ge3.a86059b52c0cfb98754d.png",
     "static/media/romet2.jpg": "/static/media/romet2.2834a95956d7b47755ea.jpg",
@@ -72,6 +75,7 @@
     "static/media/joymouse1.png": "/static/media/joymouse1.189176a9db9584c4ee55.png",
     "static/media/footer-bg.png": "/static/media/footer-bg.508d463e0332f552f19f.png",
     "static/media/sick4.jpeg": "/static/media/sick4.22f064a36021c5a1aad0.jpeg",
+    "static/media/practic1.jpeg": "/static/media/practic1.52a462070603f8d4c1f8.jpeg",
     "static/media/sick1.jpg": "/static/media/sick1.e38c6c95ab56616cf509.jpg",
     "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
@@ -84,6 +88,7 @@
     "static/media/research.svg": "/static/media/research.701d9445d41d6d07a8bf4c73adf617a2.svg",
     "static/media/webdev.svg": "/static/media/webdev.360614d2e81601197bfde08f6f420d7a.svg",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/pm.svg": "/static/media/pm.97de74a9818e51aa3fec665d0baf1913.svg",
     "static/media/software.svg": "/static/media/software.7f8ca7de456919e477a4506b49aad784.svg",
     "static/media/graphic.svg": "/static/media/graphic.a9bf36cfa702be91229f3c6e2364c1da.svg",
     "static/media/cad.svg": "/static/media/cad.0d300beca8463981fbb446e7375c0469.svg",
@@ -91,11 +96,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.98448d18.css.map": "/static/css/main.98448d18.css.map",
-    "main.545178c3.js.map": "/static/js/main.545178c3.js.map",
+    "main.1b83b58c.js.map": "/static/js/main.1b83b58c.js.map",
     "453.298f5782.chunk.js.map": "/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98448d18.css",
-    "static/js/main.545178c3.js"
+    "static/js/main.1b83b58c.js"
   ]
 }

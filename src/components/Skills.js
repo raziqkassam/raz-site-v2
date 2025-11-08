@@ -9,6 +9,7 @@ import graphic from '../assets/img/skills/graphic.svg'; // Adjust the import bas
 import research from '../assets/img/skills/research.svg'; // Adjust the import based on your file structure
 import software from '../assets/img/skills/software.svg'; // Adjust the import based on your file structure
 import cad from '../assets/img/skills/cad.svg'; // Adjust the import based on your file structure
+import pm from '../assets/img/skills/pm.svg'; // Adjust the import based on your file structure
 
 const SkillImage = styled.img`
   width: 60px;
@@ -46,7 +47,11 @@ const Skills = () => {
             <h5>Software Development</h5>
           </div>
           <div className="item">
-            <SkillImage src={webdev} alt="Brand Identity" />
+            <SkillImage src={pm} alt="Project Management" />
+            <h5>Project Management</h5>
+          </div>
+          <div className="item">
+            <SkillImage src={webdev} alt="Web Development" />
             <h5>Web Development</h5>
           </div>
           <div className="item">
@@ -54,15 +59,15 @@ const Skills = () => {
             <h5>CAD Design</h5>
           </div>
           <div className="item">
-            <SkillImage src={research} alt="Web Development" />
+            <SkillImage src={research} alt="User Research" />
             <h5>User Research</h5>
           </div>
           <div className="item">
-            <SkillImage src={data} alt="Web Development" />
+            <SkillImage src={data} alt="Data Analytics" />
             <h5>Data Analytics</h5>
           </div>
           <div className="item">
-            <SkillImage src={graphic} alt="Web Development" />
+            <SkillImage src={graphic} alt="Graphic Design" />
             <h5>Graphic Design</h5>
           </div>
         </Carousel>
